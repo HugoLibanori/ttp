@@ -26,7 +26,7 @@ const loadEmoji = async (char) => {
   }
 };
 
-export const textoParaFoto = async (texto) => {
+const textoParaFoto = async (texto) => {
   try {
     const canvas = createCanvas(512, 512);
     const ctx = canvas.getContext("2d");
@@ -150,7 +150,7 @@ export const textoParaFoto = async (texto) => {
   }
 };
 
-export const textoParaWebp = async (texto) => {
+const textoParaWebp = async (texto) => {
   try {
     const output = path.resolve("animated.webp");
     registerFont("./fonts/impact.ttf", { family: "impact" });
